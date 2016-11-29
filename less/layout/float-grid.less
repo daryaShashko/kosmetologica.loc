@@ -1,0 +1,164 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+/* float grid */
+.grid {
+  // margin: 0 28px;
+  overflow: hidden;
+}
+
+.grid__item {
+  position: relative;
+  width: auto;
+  padding: 0 .8%;
+  box-sizing: border-box;
+ // min-height: 30px;
+}
+
+@media screen and (min-width: @tablet) {
+
+  .grid {
+    // margin: 0 79px;
+  }
+
+  .grid__item {
+    float: left;
+  }
+
+  /* .grid__items width*/
+  .grid__item {
+    &_1 {
+      width: 8.3333%;
+    }
+    &_2 {
+      width: 16.6667%;
+    }
+    &_3 {
+      width: 25%;
+    }
+    &_4 {
+      width: 33.3333%;
+    }
+    &_5 {
+      width: 41.6667%;
+    }
+    &_6 {
+      width: 50%;
+    }
+    &_7 {
+      width: 58.3333%;
+    }
+    &_8 {
+      width: 66.6667%;
+    }
+    &_9 {
+      width: 75%;
+    }
+    &_10 {
+      width: 83.3333%;
+    }
+    &_11 {
+      width: 91.6667%;
+    }
+    &_12 {
+      width: 100%;
+    }
+  }
+
+  /* end .grid__items width*/
+  /* .grid__item_push*/
+  .grid__item_push {
+    &_1 {
+      margin-left: 8.3333%;
+    }
+    &_2 {
+      margin-left: 16.6667%;
+    }
+    &_3 {
+      margin-left: 25%;
+    }
+    &_4 {
+      margin-left: 33.3333%;
+    }
+    &_5 {
+      margin-left: 41.6667%;
+    }
+    &_6 {
+      margin-left: 50%;
+    }
+    &_7 {
+      margin-left: 58.3333%;
+    }
+    &_8 {
+      margin-left: 66.6667%;
+    }
+    &_9 {
+      margin-left: 75%;
+    }
+    &_10 {
+      margin-left: 83.3333%;
+    }
+    &_11 {
+      margin-left: 91.6667%;
+    }
+    &_12 {
+      margin-left: 100%;
+    }
+  }
+
+  /* end .grid__item_push*/
+  /* .grid__item_pull*/
+  .grid__item_pull {
+    &_1 {
+      margin-right: 8.3333%;
+    }
+    &_2 {
+      margin-right: 16.6667%;
+    }
+    &_3 {
+      margin-right: 25%;
+    }
+    &_4 {
+      margin-right: 33.3333%;
+    }
+    &_5 {
+      margin-right: 41.6667%;
+    }
+    &_6 {
+      margin-right: 50%;
+    }
+    &_7 {
+      margin-right: 58.3333%;
+    }
+    &_8 {
+      margin-right: 66.6667%;
+    }
+    &_9 {
+      margin-right: 75%;
+    }
+    &_10 {
+      margin-right: 83.3333%;
+    }
+    &_11 {
+      margin-right: 91.6667%;
+    }
+    &_12 {
+      margin-right: 100%;
+    }
+  }
+
+  /* end .grid__item_pull*/
+}
+
+@media screen and (min-width: @desktop) {
+  .grid {
+    //margin: 0 90px;
+  }
+}
+
+/* end float grid */
+
+
+
+
+

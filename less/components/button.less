@@ -1,0 +1,161 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+/* buttons.less */
+
+// Wrapper for buttons
+.button-wrapper {
+
+  &_align_left {
+    text-align: left;
+  }
+  &_align_right {
+    text-align: right;
+  }
+  &_align_center {
+    text-align: center;
+  }
+}
+
+// Mixins for buttons
+.button-color(@color) {
+  .button-normal(@color);
+
+  &.button_stroke {
+    .button-stroke(@color);
+  }
+}
+
+.button-normal(@color) {
+  border-color: @color;
+  background-color: @color;
+
+  &:hover {
+    background-color: @white;
+    color: @color;
+  }
+}
+
+.button-stroke(@color) {
+  background-color: @white;
+  color: @color;
+
+  &:hover {
+    border-color: @color;
+    background-color: @color;
+    color: @white;
+  }
+}
+
+.button-icon(@bg-color: '', @bg-img: '', @size-img: '') {
+  &::before {
+    .pseudo();
+    .square(@size-img);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: @bg-color;
+    background-image: url(@bg-img);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+  }
+}
+
+.button-icon-sprite (@bg-color: '', @bg-img: '', @width: '', @height:'') {
+  &::before {
+    .pseudo();
+    width: @width;
+    height: @height;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: @bg-color;
+    background-image: url(@bg-img);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
+  &:hover {
+    &::before {
+      background-position: 0 -@height;
+    }
+  }
+}
+
+/* posotion for button_icon (left or right) */
+.button_icon-position_left {
+  text-indent: 30px;
+  &::before {
+    left: 25px;
+  }
+}
+
+.button_icon-position_right {
+  &.button {
+    padding: 13px 55px 13px 25px;
+  }
+  &::before {
+    right: 25px;
+  }
+}
+
+// Button
+.button {
+  color: @white;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  padding: 14px 20px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  .button-normal(@dark-blue);
+}
+
+// Creating of new buttons
+.button_stroke {
+  .button-stroke(@dark-blue);
+}
+
+.button_color_red {
+  .button-color(@red);
+}
+
+.button_color_blue {
+  .button-color(@blue);
+}
+
+.button_color_pink {
+  .button-color(pink);
+}
+
+.button_color_yellow {
+  .button-color(@yellow);
+
+}
+
+.button_icon_bulbasaur {
+  .button-icon('', '../img/icons/bullbasaur.png', 20px);
+}
+
+.button_icon_charmander {
+  .button-icon('', '../img/icons/charmander.png', 20px);
+}
+
+.button_icon_expand {
+  .button-icon-sprite('', '../img/Expand.png', 20px, 20px);
+}
+
+.button_icon_add {
+  .button-icon-sprite('', '../img/icons/traingle.png', 20px, 14px);
+}
+
+.button_icon_more {
+  .button-icon('', '../img/icons/small-traingle.png', 8px);
+}

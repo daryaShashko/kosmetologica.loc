@@ -1,0 +1,57 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.social-icons {
+  text-align: center;
+  margin-top: 15px;
+  .box-sizing();
+
+  &__item {
+    display: inline-block;
+    .square(15px);
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 99999999px;
+
+    &:last-child {
+      margin-right: 11px;
+    }
+  }
+
+  &__linked-in {
+    background-image: url(../images/social-logo/linked-in-24.png);
+  }
+
+  &__facebook {
+    background-image: url(../images/social-logo/facebook-24.png);
+  }
+
+  &__you-tube {
+    background-image: url(../images/social-logo/youtube-24.png);
+  }
+
+  &__twitter {
+    background-image: url(../images/social-logo/twitter-24.png);
+  }
+
+  &__slide-share {
+    background-image: url(../images/social-logo/slideshare-24.png);
+  }
+}
+
+@media screen and (min-width: @tablet) {
+  .social-icons {
+    text-align: right;
+    margin-top: 0;
+
+  }
+}
+
+@media screen and (min-width: @desktop) {
+  .social-icons__item {
+    .square(24px);
+  }
+}

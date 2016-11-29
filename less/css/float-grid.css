@@ -1,0 +1,137 @@
+/* typography */
+/* text-size */
+/* typography-colors */
+/* colors*/
+/* btn-variables */
+/* breakpoints */
+/* grid variables */
+/* float grid */
+.grid {
+  overflow: hidden;
+}
+.grid__item {
+  position: relative;
+  width: auto;
+  padding: 0 .8%;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .grid__item {
+    float: left;
+  }
+  /* .grid__items width*/
+  .grid__item_1 {
+    width: 8.3333%;
+  }
+  .grid__item_2 {
+    width: 16.6667%;
+  }
+  .grid__item_3 {
+    width: 25%;
+  }
+  .grid__item_4 {
+    width: 33.3333%;
+  }
+  .grid__item_5 {
+    width: 41.6667%;
+  }
+  .grid__item_6 {
+    width: 50%;
+  }
+  .grid__item_7 {
+    width: 58.3333%;
+  }
+  .grid__item_8 {
+    width: 66.6667%;
+  }
+  .grid__item_9 {
+    width: 75%;
+  }
+  .grid__item_10 {
+    width: 83.3333%;
+  }
+  .grid__item_11 {
+    width: 91.6667%;
+  }
+  .grid__item_12 {
+    width: 100%;
+  }
+  /* end .grid__items width*/
+  /* .grid__item_push*/
+  .grid__item_push_1 {
+    margin-left: 8.3333%;
+  }
+  .grid__item_push_2 {
+    margin-left: 16.6667%;
+  }
+  .grid__item_push_3 {
+    margin-left: 25%;
+  }
+  .grid__item_push_4 {
+    margin-left: 33.3333%;
+  }
+  .grid__item_push_5 {
+    margin-left: 41.6667%;
+  }
+  .grid__item_push_6 {
+    margin-left: 50%;
+  }
+  .grid__item_push_7 {
+    margin-left: 58.3333%;
+  }
+  .grid__item_push_8 {
+    margin-left: 66.6667%;
+  }
+  .grid__item_push_9 {
+    margin-left: 75%;
+  }
+  .grid__item_push_10 {
+    margin-left: 83.3333%;
+  }
+  .grid__item_push_11 {
+    margin-left: 91.6667%;
+  }
+  .grid__item_push_12 {
+    margin-left: 100%;
+  }
+  /* end .grid__item_push*/
+  /* .grid__item_pull*/
+  .grid__item_pull_1 {
+    margin-right: 8.3333%;
+  }
+  .grid__item_pull_2 {
+    margin-right: 16.6667%;
+  }
+  .grid__item_pull_3 {
+    margin-right: 25%;
+  }
+  .grid__item_pull_4 {
+    margin-right: 33.3333%;
+  }
+  .grid__item_pull_5 {
+    margin-right: 41.6667%;
+  }
+  .grid__item_pull_6 {
+    margin-right: 50%;
+  }
+  .grid__item_pull_7 {
+    margin-right: 58.3333%;
+  }
+  .grid__item_pull_8 {
+    margin-right: 66.6667%;
+  }
+  .grid__item_pull_9 {
+    margin-right: 75%;
+  }
+  .grid__item_pull_10 {
+    margin-right: 83.3333%;
+  }
+  .grid__item_pull_11 {
+    margin-right: 91.6667%;
+  }
+  .grid__item_pull_12 {
+    margin-right: 100%;
+  }
+  /* end .grid__item_pull*/
+}
+/* end float grid */

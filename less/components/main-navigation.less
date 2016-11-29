@@ -1,0 +1,24 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.main-navigation{
+ // height: 100px;
+ // display: table-cell;
+ // vertical-align: middle;
+
+  &__item{
+    display: inline-block;
+    margin-right: 35px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__link{
+    color: @dark-grey;
+    font-family: @font-lato;
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
