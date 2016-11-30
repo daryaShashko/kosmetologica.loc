@@ -1,0 +1,104 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.icons {
+
+  &__wrapper {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+  }
+  &__item {
+    display: inline-block;
+
+  }
+  &__link {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+}
+
+.icons_mode_social {
+  margin-top: 10px;
+
+  .icons {
+    &__item {
+      margin-right: 15px;
+    }
+    &__link {
+      width: 30px;
+      height: 20px;
+    }
+    &__link_twitter {
+      background-image: url(../images/cosial-icons/twitter.png);
+    }
+
+    &__link_facebook {
+      background-image: url(../images/cosial-icons/facebook.png);
+    }
+
+    &__link_google {
+      background-image: url(../images/cosial-icons/gplus.png);
+    }
+  }
+}
+
+.icons_mode_cash {
+
+  .icons {
+
+    &__wrapper{
+      max-width: 300px;
+    }
+
+    &__item{
+      margin: 0 5px 5px 0;
+    }
+
+    &__link {
+      width: 50px;
+      height: 30px;
+      border-radius: 2px;
+    }
+    &__link_visa{
+      background-image: url(../images/cash-icons/visa.jpg);
+    }
+    &__link_master-card{
+      background-image: url(../images/cash-icons/mc.jpg);
+    }
+    &__link_wm{
+      background-image: url(../images/cash-icons/wm.jpg);
+    }
+    &__link_qiwi{
+      background-image: url(../images/cash-icons/qiwi.jpg);
+    }
+    &__link_yandex-money{
+      background-image: url(../images/cash-icons/ym.jpg);
+    }
+    &__link_alfa-bank{
+      background-image: url(../images/cash-icons/alfa.jpg);
+    }
+    &__link_sber-bank{
+      background-image: url(../images/cash-icons/sber.jpg);
+    }
+    &__link_pay-pal{
+      background-image: url(../images/cash-icons/pp.jpg);
+    }
+    &__link_maestro{
+      background-image: url(../images/cash-icons/maestro.jpg);
+    }
+    &__link_cirrus{
+      background-image: url(../images/cash-icons/cirrus.jpg);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.breadcrumbs{
+
+  &__wrapper{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  &__item{
+    color: #252a3d;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 24px;
+    position: relative;
+    display: inline-block;
+
+    &::after{
+      content: '/';
+      position: absolute;
+      right: 10px;
+      color: #252a3d;
+    }
+    &:last-child{
+      opacity: .7;
+
+      &::after{
+        display: none;
+      }
+    }
+  }
+
+}

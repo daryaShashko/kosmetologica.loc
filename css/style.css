@@ -169,6 +169,12 @@ img {
 .blue {
   background-color: #0faaff;
 }
+.made-in {
+  font-size: 10px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+}
 /* flex grid */
 .grid {
   display: flex;
@@ -178,11 +184,14 @@ img {
 .grid__item {
   box-sizing: border-box;
 }
-.grid_item-align_center {
+.grid_valign_center {
   align-items: center;
 }
 .grid_item-justify_space-between {
   justify-content: space-between;
+}
+.grid_item-justify_end {
+  justify-content: flex-end;
 }
 .page-header_primary {
   padding: 25px 0;
@@ -218,6 +227,10 @@ img {
   height: 50px;
   display: inline-block;
   background: url(../images/logo.png) no-repeat;
+  opacity: 1;
+}
+.logo__item:hover {
+  opacity: .5;
 }
 .logo_mode_footer .logo__item {
   width: 170px;
@@ -226,7 +239,7 @@ img {
 }
 .logo_mode_made-in .logo__item {
   width: 70px;
-  height: 30px;
+  height: 20px;
   background: url(../images/logo-made-in.png) no-repeat;
 }
 .social-icons {
@@ -505,18 +518,81 @@ img {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.main-navigation__item {
+.navigation__item {
   display: inline-block;
   margin-right: 35px;
 }
-.main-navigation__item:last-child {
+.navigation__item:last-child {
   margin-right: 0;
 }
-.main-navigation__link {
+.navigation__link {
   color: #666977;
   font-family: "Lato", Arial, Helvetica, MS Sans Serif, Geneva, sans-serif;
   font-size: 14px;
   text-decoration: none;
+  box-sizing: border-box;
+}
+.navigation_footer .navigation__link {
+  color: #f0f0f1;
+  opacity: 1;
+}
+.navigation_footer .navigation__link:hover {
+  opacity: .5;
+}
+.navigation_sidebar .navigation__item {
+  display: block;
+  position: relative;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+.navigation_sidebar .navigation__link {
+  color: #252a3d;
+  font-family: "Lato", Arial, Helvetica, MS Sans Serif, Geneva, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 5px;
+  width: 100%;
+  border-bottom: 1px solid #d3d4d8;
+}
+.navigation_sidebar .navigation__link::after {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  width: 12px;
+  height: 6px;
+  right: 5px;
+  top: 20px;
+  background: url(../images/sprites/arrow-red.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+.navigation_sidebar .navigation__items_child {
+  display: none;
+  padding: 10px 0 20px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.navigation_sidebar .navigation__items_child .navigation__link {
+  font-weight: 500;
+  text-transform: none;
+  border: none;
+  padding: 10px 5px;
+}
+.navigation_sidebar .navigation__items_child .navigation__link::after {
+  display: none;
+}
+.navigation_sidebar .navigation__items_child .navigation__link:hover {
+  color: #fff;
+  background-color: #252a3d;
+  padding-left: 15px;
+}
+.navigation_sidebar .navigation__item_active .navigation__link::after {
+  background-position: 0 -7px;
+}
+.navigation_sidebar .navigation__item_active .navigation__items_child {
+  display: block;
 }
 .phone__number {
   color: #666977;
@@ -540,5 +616,132 @@ img {
 }
 .page-footer .promo-text {
   opacity: 0.5;
+}
+.list-box__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.list-box__content {
+  max-height: 160px;
+}
+.list-box__link {
+  color: #ffffff;
+  opacity: .5;
+  text-decoration: none;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.list-box__content_column {
+  columns: 105px 2;
+}
+.icons__wrapper {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+}
+.icons__item {
+  display: inline-block;
+}
+.icons__link {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
+.icons__link:hover {
+  opacity: .7;
+}
+.icons_mode_social {
+  margin-top: 10px;
+}
+.icons_mode_social .icons__item {
+  margin-right: 15px;
+}
+.icons_mode_social .icons__link {
+  width: 30px;
+  height: 20px;
+}
+.icons_mode_social .icons__link_twitter {
+  background-image: url(../images/cosial-icons/twitter.png);
+}
+.icons_mode_social .icons__link_facebook {
+  background-image: url(../images/cosial-icons/facebook.png);
+}
+.icons_mode_social .icons__link_google {
+  background-image: url(../images/cosial-icons/gplus.png);
+}
+.icons_mode_cash .icons__wrapper {
+  max-width: 300px;
+}
+.icons_mode_cash .icons__item {
+  margin: 0 5px 5px 0;
+}
+.icons_mode_cash .icons__link {
+  width: 50px;
+  height: 30px;
+  border-radius: 2px;
+}
+.icons_mode_cash .icons__link_visa {
+  background-image: url(../images/cash-icons/visa.jpg);
+}
+.icons_mode_cash .icons__link_master-card {
+  background-image: url(../images/cash-icons/mc.jpg);
+}
+.icons_mode_cash .icons__link_wm {
+  background-image: url(../images/cash-icons/wm.jpg);
+}
+.icons_mode_cash .icons__link_qiwi {
+  background-image: url(../images/cash-icons/qiwi.jpg);
+}
+.icons_mode_cash .icons__link_yandex-money {
+  background-image: url(../images/cash-icons/ym.jpg);
+}
+.icons_mode_cash .icons__link_alfa-bank {
+  background-image: url(../images/cash-icons/alfa.jpg);
+}
+.icons_mode_cash .icons__link_sber-bank {
+  background-image: url(../images/cash-icons/sber.jpg);
+}
+.icons_mode_cash .icons__link_pay-pal {
+  background-image: url(../images/cash-icons/pp.jpg);
+}
+.icons_mode_cash .icons__link_maestro {
+  background-image: url(../images/cash-icons/maestro.jpg);
+}
+.icons_mode_cash .icons__link_cirrus {
+  background-image: url(../images/cash-icons/cirrus.jpg);
+}
+.breadcrumbs__wrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0;
+}
+.breadcrumbs__item {
+  color: #252a3d;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 24px;
+  position: relative;
+  display: inline-block;
+}
+.breadcrumbs__item::after {
+  content: '/';
+  position: absolute;
+  right: 10px;
+  color: #252a3d;
+}
+.breadcrumbs__item:last-child {
+  opacity: .7;
+}
+.breadcrumbs__item:last-child::after {
+  display: none;
 }
 /* end components */

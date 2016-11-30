@@ -14,7 +14,7 @@
         <!-- .content-wrapper -->
         <div class="content-wrapper">
             <!-- .grid -->
-            <div class="grid grid_item-align_center grid_item-justify_space-between">
+            <div class="grid grid_valign_center grid_item-justify_space-between">
                 <!-- .grid__item -->
                 <div class="grid__item">
                     <!-- .logo -->
@@ -29,21 +29,21 @@
 
                 <!-- .grid__item -->
                 <div class="grid__item">
-                    <!-- .main-navigation -->
-                    <nav class="main-navigation">
-                        <!-- .main-navigation__wrapper-->
-                        <ul class="main-navigation__wrapper">
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">Главная</a></li>
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">О компании</a>
+                    <!-- .navigation -->
+                    <nav class="navigation">
+                        <!-- .navigation__wrapper-->
+                        <ul class="navigation__wrapper">
+                            <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">О компании</a>
                             </li>
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">Оплата и
+                            <li class="navigation__item"><a href="" class="navigation__link">Оплата и
                                 доставка</a>
                             </li>
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">Контакты</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                         </ul>
                         <!-- end .main-navigation__wrapper-->
                     </nav>
-                    <!-- end .main-navigation -->
+                    <!-- end .navigation -->
                 </div>
                 <!-- end .grid__item -->
 
@@ -76,7 +76,7 @@
         <!-- .content-wrapper -->
         <div class="content-wrapper">
             <!-- .grid -->
-            <div class="grid grid_item-align_center grid_item-justify_space-between">
+            <div class="grid grid_valign_center grid_item-justify_space-between">
                 <!-- .grid__item -->
                 <div class="grid__item">
                     <!-- .logo -->
@@ -91,21 +91,21 @@
 
                 <!-- .grid__item -->
                 <div class="grid__item">
-                    <!-- .main-navigation -->
-                    <nav class="main-navigation">
-                        <!-- .main-navigation__wrapper-->
-                        <ul class="main-navigation__wrapper">
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">Главная</a></li>
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">О компании</a>
+                    <!-- .navigation -->
+                    <nav class="navigation navigation_header">
+                        <!-- .navigation__wrapper-->
+                        <ul class="navigation__wrapper">
+                            <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">О компании</a>
                             </li>
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">Оплата и
+                            <li class="navigation__item"><a href="" class="navigation__link">Оплата и
                                 доставка</a>
                             </li>
-                            <li class="main-navigation__item"><a href="" class="main-navigation__link">Контакты</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                         </ul>
-                        <!-- end .main-navigation__wrapper-->
+                        <!-- end .navigation__wrapper-->
                     </nav>
-                    <!-- end .main-navigation -->
+                    <!-- end .navigation -->
                 </div>
                 <!-- end .grid__item -->
 
@@ -143,9 +143,72 @@
     <!-- .content-wrapper -->
     <div class="content-wrapper">
 
+        <!-- .breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__wrapper">
+                <a href="#" class="breadcrumbs__item">Главная</a>
+                <a href="#" class="breadcrumbs__item">Новости</a>
+                <a href="#" class="breadcrumbs__item">Что-то</a>
+            </div>
+        </div>
+        <!-- end .breadcrumbs -->
+
         <!-- .page-body__sidebar --->
         <aside class="page-body__sidebar">
+            <!-- .navigation (sidebar)-->
+            <nav class="navigation navigation_sidebar">
+                <!-- .navigation__wrapper-->
+                <div class="navigation__wrapper">
+                    <!-- .navigation__items -->
+                    <ul class="navigation__items">
+                        <!-- .navigation__item -->
+                        <li class="navigation__item navigation__item_active"><a href=""
+                                                                                class="navigation__link ">Лицо</a>
+                            <!-- .navigation__wrapper-->
+                            <div class="navigation__wrapper">
+                                <!-- .navigation__items_child -->
+                                <ul class="navigation__items navigation__items_child">
+                                    <li class="navigation__item"><a href="" class="navigation__link">Лицо</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Макияж</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Волосы</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Омоложение</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Аксессуары</a>
 
+                                    </li>
+                                </ul>
+                                <!-- end .navigation__items_child -->
+                            </div>
+                            <!-- end .navigation__wrapper-->
+                        </li>
+                        <!-- end .navigation__item -->
+                        <li class="navigation__item"><a href="" class="navigation__link">Макияж</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Волосы</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Омоложение</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Аксессуары</a></li>
+                    </ul>
+                    <!-- end .navigation__items -->
+                </div>
+                <!-- end .navigation__wrapper-->
+            </nav>
+            <!-- end .navigation (sidebar)-->
+
+            <!-- .form -->
+            <div class="form">
+                <div class="form__wrapper">
+                    <h3 class="form__title">Новостная рассылка</h3>
+                    <!-- .form__item -->
+                    <form action="" class="form__item">
+                        <label for="email" class="form__item-label">Email</label>
+                        <input type="email" class="form__item-input" id="email" placeholder="vicpetrova@mail.ru">
+                        <div class="button-wrapper">
+                            <input class='button btn_stroke_green' type="button" value="Подписаться наа рассылку">
+                        </div>
+                    </form>
+                    <!-- end .form__item -->
+
+                </div>
+            </div>
+            <!-- end .form -->
         </aside>
         <!-- end .page-body__sidebar --->
 
@@ -161,7 +224,7 @@
         <!-- .content-wrapper -->
         <div class="content-wrapper">
             <!-- .grid -->
-            <div class="grid grid_item-align_center grid_item-justify_space-between">
+            <div class="grid grid_item-justify_space-between">
                 <!-- .grid__item -->
                 <div class="grid__item">
                     <!-- .logo -->
@@ -176,7 +239,37 @@
                         <p>Судья, попечитель богоугодных заведений, смотритель училищ и почтмейстер уходят.</p>
                     </div>
                     <!-- end .promo-text -->
-
+                </div>
+                <!-- end .grid__item -->
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .list-box -->
+                    <div class="list-box">
+                        <h3 class="list-box__title">Контакты</h3>
+                        <!-- .list-box__content -->
+                        <div class="list-box__content">
+                            <!-- .list-box__description -->
+                            <ul class="list-box__description">
+                                <li class="list-box__item"><a href="" class="list-box__link">+7 (831) 550 45 25</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">hello@kosmetologika.ru</a>
+                                </li>
+                            </ul>
+                            <!-- end .list-box__description -->
+                        </div>
+                        <!-- end .list-box__content -->
+                    </div>
+                    <!-- end .list-box -->
+                    <!-- .icons -->
+                    <div class="icons icons_mode_social">
+                        <!-- .icons__wrapper -->
+                        <ul class="icons__wrapper ">
+                            <li class="icons__item"><a href="" class="icons__link icons__link_twitter"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_facebook"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_google"></a>
+                        </ul>
+                        <!-- end .icons__wrapper -->
+                    </div>
+                    <!-- end .icons -->
                 </div>
                 <!-- end .grid__item -->
 
@@ -184,22 +277,20 @@
                 <div class="grid__item">
                     <!-- .list-box -->
                     <div class="list-box">
-                        <div class="list-box__title">
-                            <h3>Каталог</h3>
-                        </div>
+                        <h3 class="list-box__title">Каталог</h3>
                         <!-- .list-box__content -->
-                        <div class="list-box__content">
+                        <div class="list-box__content list-box__content_column">
                             <!-- .list-box__description -->
                             <ul class="list-box__description">
-                                <li class="list-box__item"><a href="" class="list-box__links">Омоложение</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Волосы</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Макияж</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Для мужчин</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Уход за кожей</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Аксессуары</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Ногти</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Тело</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Расходники</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Омоложение</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Волосы</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Макияж</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Для мужчин</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Уход за кожей</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Аксессуары</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Ногти</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Тело</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Расходники</a></li>
                             </ul>
                             <!-- end .list-box__description -->
                         </div>
@@ -213,66 +304,39 @@
                 <div class="grid__item">
                     <!-- .list-box -->
                     <div class="list-box">
-                        <div class="list-box__title">
-                            <h3>Контакты</h3>
-                        </div>
-                        <!-- .list-box__content -->
-                        <div class="list-box__content">
-                            <!-- .list-box__description -->
-                            <ul class="list-box__description">
-                                <li class="list-box__item"><a href="" class="list-box__links">Омоложение</a></li>
-                                <li class="list-box__item"><a href="" class="list-box__links">Волосы</a></li>
-                            </ul>
-                            <!-- end .list-box__description -->
-                            <!-- .list-box__icons -->
-                            <ul class="list-box__icons list-box__icons_mode_social">
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__twitter"></a></li>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__facebook"></a>
-                                </li>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__google-plus"></a>
-                                </li>
-                            </ul>
-                            <!-- end .list-box__icons -->
-                        </div>
-                        <!-- end .list-box__content -->
+                        <h3 class="list-box__title">Способы оплаты</h3>
                     </div>
                     <!-- end .list-box -->
-                </div>
-                <!-- end .grid__item -->
-                <!-- .grid__item -->
-                <div class="grid__item">
-                    <!-- .list-box -->
-                    <div class="list-box">
-                        <div class="list-box__title">
-                            <h3>Способы оплаты</h3>
-                        </div>
-                        <!-- .list-box__content -->
-                        <div class="list-box__content">
-                            <!-- .list-box__icons -->
-                            <ul class="list-box__icons list-box__icons_mode_cash">
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__visa"></a></li>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__master-card"></a></li>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__wm"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__qiwi"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__yandex-money"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__alfa-bank"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__sber-bank"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__pay-pal"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__maestro"></a>
-                                <li class="list-box__item"><a href="" class="list-box__link list-box__cirrus"></a>
-                                </li>
-                            </ul>
-                            <!-- end .list-box__icons -->
-                        </div>
-                        <!-- end .list-box__content -->
+                    <!-- .icons -->
+                    <div class="icons icons_mode_cash">
+                        <!-- .icons__wrapper -->
+                        <ul class="icons__wrapper ">
+                            <li class="icons__item"><a href="" class="icons__link icons__link_visa"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_master-card"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_wm"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_qiwi"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_yandex-money"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_alfa-bank"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_sber-bank"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_pay-pal"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_maestro"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_cirrus"></a>
+                            </li>
+                        </ul>
+                        <!-- end .icons__wrapper -->
                     </div>
-                    <!-- end .list-box -->
+                    <!-- end .icons -->
                 </div>
                 <!-- end .grid__item -->
             </div>
             <!-- end .grid -->
             <!-- .grid -->
-            <div class="grid grid_item-align_center grid_item-justify_space-between">
+            <div class="grid grid_valign_center grid_item-justify_end">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <span class="made-in">Made in</span>
+                </div>
+                <!-- end .grid__item -->
                 <!-- .grid__item -->
                 <div class="grid__item">
                     <!-- .logo -->
@@ -295,7 +359,39 @@
     <div class="page-footer_secondary" style="background-color: #1d2233;">
         <!-- .content-wrapper -->
         <div class="content-wrapper">
+            <!-- .grid -->
+            <div class="grid grid_valign_center grid_item-justify_space-between">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .promo-text -->
+                    <div class="promo-text promo-text_copyright">
+                        <p>ООО Косметологика © 2016</p>
+                    </div>
+                    <!-- end .promo-text -->
+                </div>
+                <!-- end .grid__item -->
 
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .navigation -->
+                    <nav class="navigation navigation_footer">
+                        <!-- .navigation__wrapper-->
+                        <ul class="navigation__wrapper">
+                            <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">О компании</a>
+                            </li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Оплата и
+                                доставка</a>
+                            </li
+                        </ul>
+                        <!-- end .navigation__wrapper-->
+                    </nav>
+                    <!-- end .navigation -->
+                </div>
+                <!-- end .grid__item -->
+
+            </div>
+            <!-- end .grid -->
         </div>
         <!-- end .content-wrapper -->
     </div>

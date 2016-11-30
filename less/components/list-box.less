@@ -1,0 +1,28 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.list-box{
+  &__title{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__content{
+    max-height: 160px;
+
+  }
+  &__link{
+    color: #ffffff;
+    opacity: .5;
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+}
+
+.list-box__content_column{
+  columns: 105px 2;
+}

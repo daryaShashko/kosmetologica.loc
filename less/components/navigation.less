@@ -1,0 +1,101 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.navigation {
+  &__item {
+    display: inline-block;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: @dark-grey;
+    font-family: @font-lato;
+    font-size: 14px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+}
+
+.navigation_footer {
+  .navigation__link {
+    color: #f0f0f1;
+    opacity: 1;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.navigation_sidebar {
+
+  .navigation__item {
+    display: block;
+    position: relative;
+    margin-right: 0;
+    box-sizing: border-box;
+
+    }
+
+
+  .navigation__link {
+    color: #252a3d;
+    font-family: @font-lato;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 5px;
+    width: 100%;
+    border-bottom: 1px solid #d3d4d8;
+
+    &::after {
+      .pseudo();
+      width: 12px;
+      height: 6px;
+      right: 5px;
+      top: 20px;
+      background: url(../images/sprites/arrow-red.png) no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+    }
+  }
+
+  .navigation__items_child {
+    display: none;
+    padding: 10px 0 20px 0;
+    box-sizing: border-box;
+    position: relative;
+
+    .navigation__link {
+      font-weight: 500;
+      text-transform: none;
+      border: none;
+      padding: 10px 5px;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #252a3d;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .navigation__item_active{
+    .navigation__link::after{
+      background-position: 0 -7px;
+    }
+    .navigation__items_child{
+      display: block;
+    }
+  }
+}
+  
+ 
