@@ -1,0 +1,17 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.logout{
+
+  &__button{
+    display: inline-block;
+    .square(16px);
+    background-image: url(../images/logout-icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    &:hover{
+      opacity: .7;
+    }
+  }
+}

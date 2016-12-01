@@ -79,50 +79,119 @@
             <div class="grid grid_valign_center grid_item-justify_space-between">
                 <!-- .grid__item -->
                 <div class="grid__item">
-                    <!-- .logo -->
-                    <div class="logo">
-                        <div class="logo__wrapper">
-                            <a href="#" class="logo__item"></a>
-                        </div>
-                    </div>
-                    <!-- end .logo -->
-                </div>
-                <!-- end .grid__item -->
-
-                <!-- .grid__item -->
-                <div class="grid__item">
-                    <!-- .navigation -->
-                    <nav class="navigation navigation_header">
+                    <!-- .navigation (header)-->
+                    <nav class="navigation navigation_header ">
                         <!-- .navigation__wrapper-->
-                        <ul class="navigation__wrapper">
-                            <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
-                            <li class="navigation__item"><a href="" class="navigation__link">О компании</a>
-                            </li>
-                            <li class="navigation__item"><a href="" class="navigation__link">Оплата и
-                                доставка</a>
-                            </li>
-                            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
-                        </ul>
+                        <div class="navigation__wrapper">
+                            <!-- .navigation__items -->
+                            <ul class="navigation__items">
+                                <!-- .navigation__item -->
+                                <li class="navigation__item"><a href=""
+                                                                class="navigation__link navigation__item_active">Каталог
+                                    товаров</a>
+                                    <!-- .navigation__wrapper-->
+                                    <div class="navigation__wrapper">
+                                        <!-- .navigation__items_child -->
+                                        <ul class="navigation__items navigation__items_child">
+                                            <li class="navigation__item"><a href="" class="navigation__link">Лицо</a>
+                                            </li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Макияж</a>
+                                            </li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Волосы</a>
+                                            </li>
+                                            <li class="navigation__item"><a href=""
+                                                                            class="navigation__link">Омоложение</a></li>
+                                            <li class="navigation__item"><a href=""
+                                                                            class="navigation__link">Аксессуары</a>
+
+                                            </li>
+                                        </ul>
+                                        <!-- end .navigation__items_child -->
+                                    </div>
+                                    <!-- end .navigation__wrapper-->
+                                </li>
+                                <!-- end .navigation__item -->
+                            </ul>
+                            <!-- end .navigation__items -->
+                        </div>
                         <!-- end .navigation__wrapper-->
                     </nav>
-                    <!-- end .navigation -->
+                    <!-- end .navigation (sidebar)-->
+
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+
+                    <!-- .search -->
+                    <div class="search search_header">
+                        <div class="search__wrapper">
+                            <form action="" class="form form_header">
+                                <input type="search" class="form__input" placeholder="Начните вводить текст">
+                                <div class="button-wrapper ">
+                                    <input class='button button_color_red' type="button" value="Найти">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- edn .search -->
+
                 </div>
                 <!-- end .grid__item -->
 
 
                 <!-- .grid__item -->
                 <div class="grid__item">
-                    <!-- .phone -->
-                    <div class="phone">
-                        <a href="#" class="phone__number"><span class="phone_number-style_small"> +7 (831)</span>550 45
-                            25</a>
-                        <!-- .button-wrapper-->
-                        <div class="button-wrapper">
-                            <a class='button' href="#">Заказать звонок</a>
+                    <!-- .cart -->
+                    <div class="cart">
+                        <div class="cart__wrapper">
+                            <a href="" class="cart__item">
+                                <span class="cart__button"></span>
+                                <span class="cart__count">24</span>
+                                <span class="cart__cash-value">12 245 руб</span>
+                            </a>
                         </div>
-                        <!-- end .button-wrapper-->
                     </div>
-                    <!-- end .phone -->
+                    <!-- end .cart -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .profile -->
+                    <div class="profile">
+                        <div class="profile__wrapper">
+                            <!-- .navigation -->
+                            <div class="navigation navigation_profile">
+                                <ul class="navigation__items ">
+                                    <span class="profile__avatar"><img src="images/avatar.png" alt=""></span>
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link profile__item">
+                                            <span class="profile__name">Виктория</span>
+                                            <span class="profile__email">victoriya@sap.com</span>
+                                        </a>
+
+                                        <ul class="navigation__items navigation__items_child">
+                                            <li class="navigation__item"><a href="" class="navigation__link">Профиль</a></li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Мои заказы</a></li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Выйти</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end .navigation -->
+                        </div>
+                    </div>
+                    <!-- end .profile -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <div class="logout">
+                        <a href="" class="logout__button"></a>
+                    </div>
                 </div>
                 <!-- end .grid__item -->
 
@@ -134,7 +203,6 @@
     </div>
     <!-- end .page-header_secondary -->
 
-
 </header>
 <!-- end .page-header -->
 
@@ -142,7 +210,6 @@
 <section class="page-body">
     <!-- .content-wrapper -->
     <div class="content-wrapper">
-
         <!-- .breadcrumbs -->
         <div class="breadcrumbs">
             <div class="breadcrumbs__wrapper">
@@ -193,15 +260,16 @@
             <!-- end .navigation (sidebar)-->
 
             <!-- .form -->
-            <div class="form">
+            <div class="form form_sidebar">
                 <div class="form__wrapper">
                     <h3 class="form__title">Новостная рассылка</h3>
                     <!-- .form__item -->
                     <form action="" class="form__item">
-                        <label for="email" class="form__item-label">Email</label>
-                        <input type="email" class="form__item-input" id="email" placeholder="vicpetrova@mail.ru">
-                        <div class="button-wrapper">
-                            <input class='button btn_stroke_green' type="button" value="Подписаться наа рассылку">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" class="form__input" id="email" placeholder="vicpetrova@mail.ru">
+                        <div class="button-wrapper ">
+                            <input class='button button_color_red button_width_full' type="button"
+                                   value="Подписаться">
                         </div>
                     </form>
                     <!-- end .form__item -->
@@ -209,9 +277,32 @@
                 </div>
             </div>
             <!-- end .form -->
+
+            <!-- .banner-->
+            <div class="banner banner_sidebar">
+                <div class="banner__wrapper">
+                    <div class="banner__item">
+                        <div class="promo-text">
+                            <span>Специальное предложение для косметологов</span>
+                            <span> Зарегистрируйтесь на сайте и получите оптовые цены</span>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <a class='button button__icon button_width_full button_color_white button_icon-position_right button_icon_arrow'
+                               href="#">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end .banner-->
         </aside>
         <!-- end .page-body__sidebar --->
+<!-- .page-body__content -->
+<div class="page-body__content">
 
+
+</div>
+        <!-- end .page-body__content -->
     </div>
     <!-- end .content-wrapper -->
 </section>
@@ -382,7 +473,7 @@
                             </li>
                             <li class="navigation__item"><a href="" class="navigation__link">Оплата и
                                 доставка</a>
-                            </li
+                            </li>
                         </ul>
                         <!-- end .navigation__wrapper-->
                     </nav>

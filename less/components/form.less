@@ -1,0 +1,95 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.form {
+
+  &__wrapper {
+
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  &__input {
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  /* placeholder for all brousers */
+  &__input::-webkit-input-placeholder, &__input::-moz-placeholder,
+  &__input:-ms-input-placeholder {
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+  }
+
+  /* end placeholder for all brousers */
+
+  /* placeholder on focus for all brousers */
+  &__input:focus::-webkit-input-placeholder,
+  &__input:focus::-moz-placeholder, &__input:focus:-ms-input-placeholder {
+    opacity: 0;
+  }
+  /* end placeholder on focus for all brousers */
+}
+
+.form_sidebar {
+  margin: 50px 0;
+  .form__wrapper {
+    border: 2px solid #ebeff0;
+    border-radius: 2px;
+    width: 100%;
+    display: inline-block;
+    padding: 30px 20px;
+  }
+
+  .form__input {
+    padding: 15px 12px;
+    border: 1px solid #ebeff0;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  /* placeholder for all brousers */
+  .form__input::-webkit-input-placeholder, .form__input:-moz-placeholder,
+  .form__input:-ms-input-placeholder {
+    color: #252a3d;
+  }
+  /* end placeholder for all brousers */
+}
+
+.form_header {
+
+  .form__input {
+    width: 465px;
+    padding: 10px 20px;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+  }
+
+  /* placeholder for all brousers */
+  .form__input::-webkit-input-placeholder, .form__input:-moz-placeholder,
+  .form__input:-ms-input-placeholder {
+    color: #666977;
+  }
+  /* end placeholder for all brousers */
+
+  .button-wrapper {
+    display: inline-block;
+    margin-left: -2px;
+  }
+
+  .button{
+    border-radius: 0 2px 2px 0;
+    padding: 14px 30px 10px;
+  }
+}

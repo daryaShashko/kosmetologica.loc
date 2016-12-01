@@ -1,0 +1,33 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.cart{
+
+  &__item{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+  &__button{
+    .square(18px);
+    display: inline-block;
+    background-image: url(../images/cart-icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  &__count{
+    font-size: 11px;
+    padding: 1px 4px 0 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: @red;
+  }
+
+  &__cash-value{
+    font-size: 10px;
+    margin-left: 15px;
+  }
+}

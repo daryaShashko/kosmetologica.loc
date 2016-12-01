@@ -3,41 +3,596 @@
 <head>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
 </head>
 <body>
 
-<div class="grid">
-    <div class="grid__item grid__item_2 red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolor incidunt ipsum minus nam nesciunt optio pariatur quasi voluptate voluptatum? Eaque est exercitationem illo repudiandae! Architecto minima odit quo soluta!</div>
-    <div class="grid__item grid__item_2 blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid beatae consectetur culpa dolor enim ex facilis incidunt ipsam libero maxime, natus odio, omnis placeat quae quasi quidem quis ullam.</div>
-    <div class="grid__item grid__item_2 green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum molestiae optio saepe velit? Aliquam at autem est explicabo fugiat iure labore, libero natus odio omnis perferendis quia sit ullam?</div>
-    <div class="grid__item grid__item_2 red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at autem consequatur consequuntur distinctio ducimus ex, facilis fuga harum ipsam ipsum laboriosam laborum nam non similique, sit veritatis voluptatem voluptates.</div>
-    <div class="grid__item grid__item_2 blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet autem corporis cumque cupiditate debitis esse ex facere fugit laudantium, maiores molestiae, possimus praesentium quam reprehenderit tempore unde ut vitae.</div>
-    <div class="grid__item grid__item_2 green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam amet commodi culpa cum doloribus explicabo hic incidunt, iusto odio officia pariatur provident quaerat reiciendis sed soluta vel voluptate voluptatem.</div>
-</div>
+<!-- .page-header -->
+<header class="page-header">
 
-<div class="grid">
-    <div class="grid__item grid__item_12 green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deleniti dignissimos dolorem eius enim fuga fugiat laborum voluptas.</div>
-</div>
+    <!-- .page-header_primary -->
+    <div class="page-header_primary">
+        <!-- .content-wrapper -->
+        <div class="content-wrapper">
+            <!-- .grid -->
+            <div class="grid grid_valign_center grid_item-justify_space-between">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .logo -->
+                    <div class="logo">
+                        <div class="logo__wrapper">
+                            <a href="#" class="logo__item"></a>
+                        </div>
+                    </div>
+                    <!-- end .logo -->
+                </div>
+                <!-- end .grid__item -->
 
-<div class="grid">
-    <div class="grid__item grid__item_3 red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at aut autem consectetur consequuntur corporis doloremque enim et facilis fuga nemo nihil non officia, quisquam saepe sit, suscipit vitae voluptatum!</div>
-    <div class="grid__item grid__item_3 blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem blanditiis ex, fugit inventore maiores molestias, nisi odio officiis provident quasi quibusdam quidem ratione rem repudiandae sequi velit veniam voluptatum.</div>
-    <div class="grid__item grid__item_3 green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cumque doloremque ducimus, exercitationem harum illo iste laudantium, qui sed similique soluta suscipit! Aspernatur facere maiores nesciunt quo reiciendis. Earum.</div>
-    <div class="grid__item grid__item_3 red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, cumque eligendi, impedit incidunt nam nihil officiis, placeat porro quae qui reprehenderit repudiandae voluptas? Cumque dolorum magnam, necessitatibus nobis quisquam sed.</div>
-</div>
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .navigation -->
+                    <nav class="navigation">
+                        <!-- .navigation__wrapper-->
+                        <ul class="navigation__wrapper">
+                            <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">О компании</a>
+                            </li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Оплата и
+                                доставка</a>
+                            </li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                        </ul>
+                        <!-- end .main-navigation__wrapper-->
+                    </nav>
+                    <!-- end .navigation -->
+                </div>
+                <!-- end .grid__item -->
 
-<div class="grid">
-    <div class="grid__item grid__item_4 red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem excepturi molestias nesciunt officia possimus, qui sit vitae. Accusantium autem delectus et ipsa possimus quam quibusdam suscipit totam velit veniam!</div>
-    <div class="grid__item grid__item_4 green">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis exercitationem fugit soluta temporibus. At, blanditiis, saepe. Consequuntur deserunt dignissimos, expedita fugiat harum ipsum maiores nostrum quas quo repellat repellendus.</div>
-    <div class="grid__item grid__item_4 blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus ad alias amet debitis eos impedit in iure laboriosam libero minus nemo nobis odio quas, quidem sequi tempore veniam voluptatibus!</div>
-</div>
 
-<div class="grid">
-    <div class=" grid__item grid__item_5 grid__item_push_1 red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nam nihil officiis quod repellat saepe vero. Adipisci autem consequatur delectus distinctio earum esse expedita explicabo officiis quo temporibus? A, laborum?</div>
-    <div class="grid__item grid__item_5 red ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate debitis distinctio eaque eos mollitia numquam praesentium ullam? Cumque dolores et magnam voluptate voluptatum. A animi dignissimos hic ratione repellat suscipit.</div>
-</div>
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .phone -->
+                    <div class="phone">
+                        <a href="#" class="phone__number"><span class="phone_number-style_small"> +7 (831)</span>550 45
+                            25</a>
+                        <!-- .button-wrapper-->
+                        <div class="button-wrapper">
+                            <a class='button' href="#">Заказать звонок</a>
+                        </div>
+                        <!-- end .button-wrapper-->
+                    </div>
+                    <!-- end .phone -->
+                </div>
+                <!-- end .grid__item -->
 
+            </div>
+            <!-- end .grid -->
+        </div>
+        <!-- end .content-wrapper -->
+    </div>
+    <!-- end .page-header_primary -->
+
+    <!-- .page-header_secondary -->
+    <div class="page-header_secondary" style="background-color: #252a3d;">
+        <!-- .content-wrapper -->
+        <div class="content-wrapper">
+            <!-- .grid -->
+            <div class="grid grid_valign_center grid_item-justify_space-between">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .navigation (header)-->
+                    <nav class="navigation navigation_header ">
+                        <!-- .navigation__wrapper-->
+                        <div class="navigation__wrapper">
+                            <!-- .navigation__items -->
+                            <ul class="navigation__items">
+                                <!-- .navigation__item -->
+                                <li class="navigation__item"><a href=""
+                                                                class="navigation__link navigation__item_active">Каталог
+                                    товаров</a>
+                                    <!-- .navigation__wrapper-->
+                                    <div class="navigation__wrapper">
+                                        <!-- .navigation__items_child -->
+                                        <ul class="navigation__items navigation__items_child">
+                                            <li class="navigation__item"><a href="" class="navigation__link">Лицо</a>
+                                            </li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Макияж</a>
+                                            </li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Волосы</a>
+                                            </li>
+                                            <li class="navigation__item"><a href=""
+                                                                            class="navigation__link">Омоложение</a></li>
+                                            <li class="navigation__item"><a href=""
+                                                                            class="navigation__link">Аксессуары</a>
+
+                                            </li>
+                                        </ul>
+                                        <!-- end .navigation__items_child -->
+                                    </div>
+                                    <!-- end .navigation__wrapper-->
+                                </li>
+                                <!-- end .navigation__item -->
+                            </ul>
+                            <!-- end .navigation__items -->
+                        </div>
+                        <!-- end .navigation__wrapper-->
+                    </nav>
+                    <!-- end .navigation (sidebar)-->
+
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+
+                    <!-- .search -->
+                    <div class="search search_header">
+                        <div class="search__wrapper">
+                            <form action="" class="form form_header">
+                                <input type="search" class="form__input" placeholder="Начните вводить текст">
+                                <div class="button-wrapper ">
+                                    <input class='button button_color_red' type="button" value="Найти">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- edn .search -->
+
+                </div>
+                <!-- end .grid__item -->
+
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .cart -->
+                    <div class="cart">
+                        <div class="cart__wrapper">
+                            <a href="" class="cart__item">
+                                <span class="cart__button"></span>
+                                <span class="cart__count">24</span>
+                                <span class="cart__cash-value">12 245 руб</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end .cart -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .profile -->
+                    <div class="profile">
+                        <div class="profile__wrapper">
+                            <!-- .navigation -->
+                            <div class="navigation navigation_profile">
+                                <ul class="navigation__items ">
+                                    <span class="profile__avatar"><img src="images/avatar.png" alt=""></span>
+                                    <li class="navigation__item">
+                                        <a href="" class="navigation__link profile__item">
+                                            <span class="profile__name">Виктория</span>
+                                            <span class="profile__email">victoriya@sap.com</span>
+                                        </a>
+
+                                        <ul class="navigation__items navigation__items_child">
+                                            <li class="navigation__item"><a href="" class="navigation__link">Профиль</a>
+                                            </li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Мои
+                                                заказы</a></li>
+                                            <li class="navigation__item"><a href="" class="navigation__link">Выйти</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end .navigation -->
+                        </div>
+                    </div>
+                    <!-- end .profile -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <div class="logout">
+                        <a href="" class="logout__button"></a>
+                    </div>
+                </div>
+                <!-- end .grid__item -->
+
+            </div>
+            <!-- end .grid -->
+
+        </div>
+        <!-- end .content-wrapper -->
+    </div>
+    <!-- end .page-header_secondary -->
+
+</header>
+<!-- end .page-header -->
+
+<!-- .page-body -->
+<section class="page-body">
+    <!-- .content-wrapper -->
+    <div class="content-wrapper">
+        <!-- .breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__wrapper">
+                <a href="#" class="breadcrumbs__item">Главная</a>
+                <a href="#" class="breadcrumbs__item">Новости</a>
+                <a href="#" class="breadcrumbs__item">Что-то</a>
+            </div>
+        </div>
+        <!-- end .breadcrumbs -->
+
+        <!-- .page-body__sidebar --->
+        <aside class="page-body__sidebar">
+            <!-- .navigation (sidebar)-->
+            <nav class="navigation navigation_sidebar">
+                <!-- .navigation__wrapper-->
+                <div class="navigation__wrapper">
+                    <!-- .navigation__items -->
+                    <ul class="navigation__items">
+                        <!-- .navigation__item -->
+                        <li class="navigation__item navigation__item_active"><a href=""
+                                                                                class="navigation__link ">Лицо</a>
+                            <!-- .navigation__wrapper-->
+                            <div class="navigation__wrapper">
+                                <!-- .navigation__items_child -->
+                                <ul class="navigation__items navigation__items_child">
+                                    <li class="navigation__item"><a href="" class="navigation__link">Лицо</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Макияж</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Волосы</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Омоложение</a></li>
+                                    <li class="navigation__item"><a href="" class="navigation__link">Аксессуары</a>
+
+                                    </li>
+                                </ul>
+                                <!-- end .navigation__items_child -->
+                            </div>
+                            <!-- end .navigation__wrapper-->
+                        </li>
+                        <!-- end .navigation__item -->
+                        <li class="navigation__item"><a href="" class="navigation__link">Макияж</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Волосы</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Омоложение</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Аксессуары</a></li>
+                    </ul>
+                    <!-- end .navigation__items -->
+                </div>
+                <!-- end .navigation__wrapper-->
+            </nav>
+            <!-- end .navigation (sidebar)-->
+
+            <!-- .form -->
+            <div class="form form_sidebar">
+                <div class="form__wrapper">
+                    <h3 class="form__title">Новостная рассылка</h3>
+                    <!-- .form__item -->
+                    <form action="" class="form__item">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" class="form__input" id="email" placeholder="vicpetrova@mail.ru">
+                        <div class="button-wrapper ">
+                            <input class='button button_color_red button_width_full' type="button"
+                                   value="Подписаться">
+                        </div>
+                    </form>
+                    <!-- end .form__item -->
+
+                </div>
+            </div>
+            <!-- end .form -->
+
+            <!-- .banner-->
+            <div class="banner banner_sidebar">
+                <div class="banner__wrapper">
+                    <div class="banner__item">
+                        <div class="promo-text">
+                            <span>Специальное предложение для косметологов</span>
+                            <span> Зарегистрируйтесь на сайте и получите оптовые цены</span>
+                        </div>
+
+                        <div class="button-wrapper">
+                            <a class='button button__icon button_width_full button_color_white button_icon-position_right button_icon_arrow'
+                               href="#">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end .banner-->
+        </aside>
+        <!-- end .page-body__sidebar --->
+        <!-- .page-body__content -->
+        <div class="page-body__content">
+
+            <!-- end .hero-slider -->
+            <div class="hero-slider">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- end .hero-slider -->
+
+            <div class="grid">
+                <div class="grid__item">
+                    <div class="media-info">
+                        <div class="media-info__wrapper">
+                            <!-- .media-info__item-->
+                            <div class="media-info__item">
+                                <span class="media-info__media media-info__media_icon media-info__media_icon_guard"></span>
+                                <div class="media-info__description">
+                                    <h3 class="media-info__title">Гарантия производителей</h3>
+                                    <div class="media-info__text">
+                                        Погода стояла прекрасная; правда, издали грозилась опять холера, но жители ...й губернии успели уже привыкнуть к ее посещениям.
+                                    </div>
+                                    <div class="button-wrapper button-wrapper_align_center">
+                                        <a class="button button_stroke" href="#">Подробнее</a>
+                                    </div>
+                            </div>
+                        </div>
+                            <!-- end .media-info__item-->
+                            <!-- .media-info__item-->
+                            <div class="media-info__item">
+                                <span class="media-info__media media-info__media_icon media-info__media_icon_guard"></span>
+                                <div class="media-info__description">
+                                    <h3 class="media-info__title">Гарантия производителей</h3>
+                                    <div class="media-info__text">
+                                        Погода стояла прекрасная; правда, издали грозилась опять холера, но жители ...й губернии успели уже привыкнуть к ее посещениям.
+                                    </div>
+                                    <div class="button-wrapper button-wrapper_align_center">
+                                        <a class="button button_stroke" href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end .media-info__item-->
+                    </div>
+                </div>
+            </div>
+
+                <div class="grid">
+                    <div class="grid__item">
+                        <div class="media-info">
+                            <div class="media-info__wrapper">
+                                <!-- .media-info__item-->
+                                <div class="media-info__item">
+                                    <span class="media-info__media media-info__media_icon media-info__media_icon_guard"></span>
+                                    <div class="media-info__description">
+                                        <h3 class="media-info__title">Гарантия производителей</h3>
+                                        <div class="media-info__text">
+                                            Погода стояла прекрасная; правда, издали грозилась опять холера, но жители ...й губернии успели уже привыкнуть к ее посещениям.
+                                        </div>
+                                        <div class="button-wrapper button-wrapper_align_center">
+                                            <a class="button button_stroke" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end .media-info__item-->
+                                <!-- .media-info__item-->
+                                <div class="media-info__item">
+                                    <span class="media-info__media media-info__media_icon media-info__media_icon_guard"></span>
+                                    <div class="media-info__description">
+                                        <h3 class="media-info__title">Гарантия производителей</h3>
+                                        <div class="media-info__text">
+                                            Погода стояла прекрасная; правда, издали грозилась опять холера, но жители ...й губернии успели уже привыкнуть к ее посещениям.
+                                        </div>
+                                        <div class="button-wrapper button-wrapper_align_center">
+                                            <a class="button button_stroke" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end .media-info__item-->
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+        <!-- end .page-body__content -->
+    </div>
+    <!-- end .content-wrapper -->
+</section>
+<!-- end .page-body -->
+
+<!-- .page-footer -->
+<footer class="page-footer">
+    <!-- .page-footer_primary -->
+    <div class="page-footer_primary" style="background-color: #252a3d;">
+        <!-- .content-wrapper -->
+        <div class="content-wrapper">
+            <!-- .grid -->
+            <div class="grid grid_item-justify_space-between">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .logo -->
+                    <div class="logo logo_mode_footer">
+                        <div class="logo__wrapper">
+                            <a href="#" class="logo__item"></a>
+                        </div>
+                    </div>
+                    <!-- end .logo -->
+                    <!-- .promo-text -->
+                    <div class="promo-text">
+                        <p>Судья, попечитель богоугодных заведений, смотритель училищ и почтмейстер уходят.</p>
+                    </div>
+                    <!-- end .promo-text -->
+                </div>
+                <!-- end .grid__item -->
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .list-box -->
+                    <div class="list-box">
+                        <h3 class="list-box__title">Контакты</h3>
+                        <!-- .list-box__content -->
+                        <div class="list-box__content">
+                            <!-- .list-box__description -->
+                            <ul class="list-box__description">
+                                <li class="list-box__item"><a href="" class="list-box__link">+7 (831) 550 45 25</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">hello@kosmetologika.ru</a>
+                                </li>
+                            </ul>
+                            <!-- end .list-box__description -->
+                        </div>
+                        <!-- end .list-box__content -->
+                    </div>
+                    <!-- end .list-box -->
+                    <!-- .icons -->
+                    <div class="icons icons_mode_social">
+                        <!-- .icons__wrapper -->
+                        <ul class="icons__wrapper ">
+                            <li class="icons__item"><a href="" class="icons__link icons__link_twitter"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_facebook"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_google"></a>
+                        </ul>
+                        <!-- end .icons__wrapper -->
+                    </div>
+                    <!-- end .icons -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .list-box -->
+                    <div class="list-box">
+                        <h3 class="list-box__title">Каталог</h3>
+                        <!-- .list-box__content -->
+                        <div class="list-box__content list-box__content_column">
+                            <!-- .list-box__description -->
+                            <ul class="list-box__description">
+                                <li class="list-box__item"><a href="" class="list-box__link">Омоложение</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Волосы</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Макияж</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Для мужчин</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Уход за кожей</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Аксессуары</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Ногти</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Тело</a></li>
+                                <li class="list-box__item"><a href="" class="list-box__link">Расходники</a></li>
+                            </ul>
+                            <!-- end .list-box__description -->
+                        </div>
+                        <!-- end .list-box__content -->
+                    </div>
+                    <!-- end .list-box -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .list-box -->
+                    <div class="list-box">
+                        <h3 class="list-box__title">Способы оплаты</h3>
+                    </div>
+                    <!-- end .list-box -->
+                    <!-- .icons -->
+                    <div class="icons icons_mode_cash">
+                        <!-- .icons__wrapper -->
+                        <ul class="icons__wrapper ">
+                            <li class="icons__item"><a href="" class="icons__link icons__link_visa"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_master-card"></a></li>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_wm"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_qiwi"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_yandex-money"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_alfa-bank"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_sber-bank"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_pay-pal"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_maestro"></a>
+                            <li class="icons__item"><a href="" class="icons__link icons__link_cirrus"></a>
+                            </li>
+                        </ul>
+                        <!-- end .icons__wrapper -->
+                    </div>
+                    <!-- end .icons -->
+                </div>
+                <!-- end .grid__item -->
+            </div>
+            <!-- end .grid -->
+            <!-- .grid -->
+            <div class="grid grid_valign_center grid_item-justify_end">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <span class="made-in">Made in</span>
+                </div>
+                <!-- end .grid__item -->
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .logo -->
+                    <div class="logo logo_mode_made-in">
+                        <div class="logo__wrapper">
+                            <a href="#" class="logo__item"></a>
+                        </div>
+                    </div>
+                    <!-- end .logo -->
+                </div>
+                <!-- end .grid__item -->
+            </div>
+            <!-- end .grid -->
+        </div>
+        <!-- end .content-wrapper -->
+    </div>
+    <!-- end .page-footer_primary -->
+
+    <!-- .page-footer_secondary-->
+    <div class="page-footer_secondary" style="background-color: #1d2233;">
+        <!-- .content-wrapper -->
+        <div class="content-wrapper">
+            <!-- .grid -->
+            <div class="grid grid_valign_center grid_item-justify_space-between">
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .promo-text -->
+                    <div class="promo-text promo-text_copyright">
+                        <p>ООО Косметологика © 2016</p>
+                    </div>
+                    <!-- end .promo-text -->
+                </div>
+                <!-- end .grid__item -->
+
+                <!-- .grid__item -->
+                <div class="grid__item">
+                    <!-- .navigation -->
+                    <nav class="navigation navigation_footer">
+                        <!-- .navigation__wrapper-->
+                        <ul class="navigation__wrapper">
+                            <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="" class="navigation__link">О компании</a>
+                            </li>
+                            <li class="navigation__item"><a href="" class="navigation__link">Оплата и
+                                доставка</a>
+                            </li>
+                        </ul>
+                        <!-- end .navigation__wrapper-->
+                    </nav>
+                    <!-- end .navigation -->
+                </div>
+                <!-- end .grid__item -->
+
+            </div>
+            <!-- end .grid -->
+        </div>
+        <!-- end .content-wrapper -->
+    </div>
+    <!-- end .page-footer_secondary-->
+</footer>
+<!-- end .page-footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+<script>
+    var heroSwiper = new Swiper('.hero-slider .swiper-container', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+        paginationClickable: true,
+        pagination: '.hero-slider .swiper-pagination'
+    });
+</script>
 </body>
 </html>

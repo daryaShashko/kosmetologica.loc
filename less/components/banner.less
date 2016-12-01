@@ -1,0 +1,44 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.banner {
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+
+}
+
+.banner_sidebar {
+  .banner__wrapper {
+    padding: 30px 20px 20px;
+    background-image: url(../images/banner-sidebar.jpg);
+  }
+  .promo-text {
+    font-size: 18px;
+    line-height: 1.2;
+    width: auto;
+    margin-top: 0;
+
+    span {
+      padding-top: 10px;
+      display: inline-block;
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 30px;
+  }
+
+  .button {
+    text-transform: uppercase;
+  }
+}
+
+.banner_index-page{
+  
+  .banner-wrapper{
+    background-image: url(..);
+  }
+}
