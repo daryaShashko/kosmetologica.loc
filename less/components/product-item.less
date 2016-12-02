@@ -1,0 +1,74 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.product-item {
+  text-align: center;
+
+  &__wrapper {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 20px 10px 0 0;
+  }
+
+  &__info {
+    margin-top: 15px;
+  }
+  &__name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #252a3d;
+    text-transform: uppercase;
+    max-width: 140px;
+    margin: 0 auto;
+  }
+
+  &__price {
+    font-size: 14px;
+    display: block;
+    margin: 15px auto 0;
+
+    &_new {
+      font-weight: 700;
+      color: #41b492;
+    }
+    &_old {
+      margin-top: 5px;
+      color: #666977;
+      font-size: 12px;
+      text-decoration: line-through;
+    }
+  }
+
+  &__hot-wrapper{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #cf1b42;
+    right: -7px;
+    top: -12px;
+  }
+
+  &__hot-value{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+   .square(50px);
+    display: table-cell;
+    vertical-align: middle;
+
+
+
+/*    &::before{
+      .pseudo();
+      .square(50px);
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: @red;
+      z-index: -1;
+    }*/
+  }
+
+}
+

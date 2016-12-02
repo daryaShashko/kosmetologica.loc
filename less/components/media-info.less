@@ -1,0 +1,54 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.media-info {
+
+  &__wrapper {
+    //max-width: 50%;
+    display: inline-block;
+    margin: 50px 0 0;
+    width: 410px;
+  }
+
+  &__media_icon {
+    display: inline-block;
+    width: 40px;
+    height: 80px;
+    margin-right: 25px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+
+  }
+  &__media_icon_guard::after {
+    .pseudo();
+    .square(40px);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-image: url(../images/benefits/garantee.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  &__title {
+    color: #252a3d;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__text {
+    color: #7a7d89;
+    font-size: 14px;
+    line-height: 1.2em;
+
+  }
+
+  .button-wrapper_align_left {
+    margin: 20px 0 0 65px;
+  }
+  .button {
+    border: 1px solid #ebedf3;
+  }
+}

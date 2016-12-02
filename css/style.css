@@ -178,7 +178,7 @@ img {
 /* flex grid */
 .grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .grid__item {
   box-sizing: border-box;
@@ -995,5 +995,127 @@ img {
   display: block;
   opacity: .8;
   overflow: hidden;
+}
+.media-info__wrapper {
+  display: inline-block;
+  margin: 50px 0 0;
+  width: 410px;
+}
+.media-info__media_icon {
+  display: inline-block;
+  width: 40px;
+  height: 80px;
+  margin-right: 25px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.media-info__media_icon_guard::after {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-image: url(../images/benefits/garantee.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.media-info__title {
+  color: #252a3d;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.media-info__text {
+  color: #7a7d89;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.media-info .button-wrapper_align_left {
+  margin: 20px 0 0 65px;
+}
+.media-info .button {
+  border: 1px solid #ebedf3;
+}
+.title-section {
+  display: inline-block;
+  padding: 15px 0;
+  text-align: left;
+}
+.title-section__item {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.content-section {
+  padding: 65px 0 0;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.product-item {
+  text-align: center;
+}
+.product-item__wrapper {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px 0 0;
+}
+.product-item__info {
+  margin-top: 15px;
+}
+.product-item__name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #252a3d;
+  text-transform: uppercase;
+  max-width: 140px;
+  margin: 0 auto;
+}
+.product-item__price {
+  font-size: 14px;
+  display: block;
+  margin: 15px auto 0;
+}
+.product-item__price_new {
+  font-weight: 700;
+  color: #41b492;
+}
+.product-item__price_old {
+  margin-top: 5px;
+  color: #666977;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.product-item__hot-wrapper {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #cf1b42;
+  right: -7px;
+  top: -12px;
+}
+.product-item__hot-value {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  /*    &::before{
+      .pseudo();
+      .square(50px);
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: @red;
+      z-index: -1;
+    }*/
 }
 /* end components */
