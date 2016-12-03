@@ -20,30 +20,22 @@
 // Mixins for buttons
 .button-color(@color) {
   .button-normal(@color);
-
-  &.button_stroke {
-    .button-stroke(@color);
-  }
 }
 
 .button-normal(@color) {
+  border-top: 3px solid @color;
   border-color: @color;
   background-color: @color;
 
   &:hover {
-    background-color: @white;
-    color: @color;
+    border-top: 3px solid darken(@color, 8%);
+    background-color: darken(@color, 8%);
+    color: #fff;
   }
-}
 
-.button-stroke(@color) {
-  background-color: @white;
-  color: @color;
-
-  &:hover {
-    border-color: @color;
-    background-color: @color;
-    color: @white;
+  &:active {
+    border-top: 3px solid @color;
+    background-color: lighten(@color, 8%);
   }
 }
 
@@ -112,24 +104,44 @@
   padding: 14px 20px;
   display: inline-block;
   position: relative;
-  border: 1px solid;
+  border-top: 3px solid;
   border-radius: 2px;
   box-sizing: border-box;
   cursor: pointer;
-  .button-normal(@dark-blue);
 }
 
 // Creating of new buttons
-.button_stroke {
-  .button-stroke(@dark-blue);
+
+.button_color_blue {
+  background-color: #252a3d;
+  border-color: #252a3d;
+
+  &:hover {
+    border-color: #161928;
+    background-color: #161928;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: #0f1118;
+    background-color: #252a3d;
+  }
 }
 
 .button_color_red {
-  .button-color(@red);
-}
+  background-color: #cf1b42;
+  border-color: #cf1b42;
 
-.button_color_blue {
-  .button-color(@blue);
+  &:hover {
+    border-color: #ae092d;
+    background-color: #ae092d;
+    color: #fff;
+  }
+
+  &:active {
+    border-color: #530b1a;
+    background-color: #cf1b42;
+  }
 }
 
 .button_color_pink {
@@ -140,20 +152,52 @@
   .button-color(@yellow);
 }
 
-
-.button_color_white {
+/*.button_color_white.button__icon {
   color: @dark-blue;
   background-color: @white;
   border: none;
 
-  &:hover{
+  &:hover {
     background-color: @dark-blue;
     color: @white;
   }
+
+
+}*/
+
+.button_color_white {
+  color: #252a3d;
+  background-color: #fff;
+  border: 1px solid #d3d4d8;
+  position: relative;
+
+  &:hover {
+    background-color: #d3d4d8;
+    color: #252a3d;
+  }
+ 
+  &:active {
+    background-color: #fff;
+  }
+
+  &::after {
+    .pseudo();
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+  }
+}
+.button_color_white:hover:after{
+  background-color: #d3d4d8;
 }
 
-.button_icon_arrow{
-  .button-icon-sprite('', '../images/sprites/arrow.png', 14px, 14px);
+.button_color_white:active:after{
+  background-color: #666666;
+}
+.button_icon_arrow {
+  .button-icon('', '../images/sprites/arrow.png', 14px);
 }
 
 .button_icon_add {
@@ -164,6 +208,6 @@
   .button-icon('', '../img/icons/small-traingle.png', 8px);
 }
 
-.button_width_full{
+.button_width_full {
   width: 100%;
 }

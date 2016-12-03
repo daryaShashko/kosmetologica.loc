@@ -24,3 +24,45 @@
   display: inline-block;
   margin-right: 5px;
 }
+
+.swiper-button-prev,
+.swiper-container-rtl
+.swiper-button-nex{
+  background-image: url(../images/slider-arrow.png);
+  height: 22px;
+  background-position: 0 0;
+  left: 0;
+}
+
+.swiper-button-next,
+.swiper-container-rtl
+.swiper-button-nex{
+  background-image: url(../images/slider-arrow.png);
+  height: 22px;
+  background-position: 0 -22px;
+  right: 0;
+}
+
+.swiper-container{
+  width: 760px;
+}
+
+.swiper-pagination{
+  padding-left: 25px;
+  text-align: left;
+}
+
+.swiper-pagination-bullet{
+  .square(6px);
+  background-color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #cf1b42;
+  transform: scale(1.67);
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets{
+  bottom: 30px;
+}

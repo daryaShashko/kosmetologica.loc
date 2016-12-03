@@ -59,7 +59,7 @@
                             25</a>
                         <!-- .button-wrapper-->
                         <div class="button-wrapper">
-                            <a class='button' href="#">Заказать звонок</a>
+                            <a class='button button_color_blue' href="#">Заказать звонок</a>
                         </div>
                         <!-- end .button-wrapper-->
                     </div>
@@ -89,8 +89,8 @@
                             <!-- .navigation__items -->
                             <ul class="navigation__items">
                                 <!-- .navigation__item -->
-                                <li class="navigation__item"><a href=""
-                                                                class="navigation__link navigation__item_active">Каталог
+                                <li class="navigation__item navigation__item_has-children  "><a href=""
+                                                                                                class="navigation__link">Каталог
                                     товаров</a>
                                     <!-- .navigation__wrapper-->
                                     <div class="navigation__wrapper">
@@ -124,6 +124,7 @@
                 </div>
                 <!-- end .grid__item -->
 
+
                 <!-- .grid__item -->
                 <div class="grid__item">
 
@@ -133,7 +134,7 @@
                             <form action="" class="form form_header">
                                 <input type="search" class="form__input" placeholder="Начните вводить текст">
                                 <div class="button-wrapper ">
-                                    <input class='button button_color_red' type="button" value="Найти">
+                                    <a class='button button_color_red'>Найти</a>
                                 </div>
                             </form>
                         </div>
@@ -235,35 +236,127 @@
                     <!-- .navigation__items -->
                     <ul class="navigation__items">
                         <!-- .navigation__item -->
-                        <li class="navigation__item navigation__item_active"><a href=""
-                                                                                class="navigation__link ">Лицо</a>
-                            <!-- .navigation__wrapper-->
-                            <div class="navigation__wrapper">
+                        <li class="navigation__item navigation__item_has-children navigation__item_active"><a href=""
+                                                                                                              class="navigation__link ">Лицо</a>
+                            <!-- .navigation__items-wrapper-->
+                            <div class="navigation__items-wrapper">
                                 <!-- .navigation__items_child -->
                                 <ul class="navigation__items navigation__items_child">
-                                    <li class="navigation__item"><a href="" class="navigation__link">Лицо</a></li>
+                                    <li class="navigation__item navigation__item_has-children"><a href=""
+                                                                                                  class="navigation__link">Лицо </a>
+                                        <!-- .navigation__items-wrapper-->
+                                        <div class="navigation__items-wrapper navigation__items-wrapper_level_3 ">
+                                            <!-- .navigation__items_child -->
+                                            <ul class="navigation__items navigation__items_child">
+                                                <li class="navigation__item navigation__item_category"><a href=""
+                                                                                                          class="navigation__link">Лицо</a>
+                                                    <!-- .navigation__items-wrapper-->
+                                                    <div class="navigation__items-wrapper">
+                                                        <!-- .navigation__items_child -->
+                                                        <ul class="navigation__items navigation__items_child">
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Лицо</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Макияж</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Волосы</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Омоложение</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Аксессуары</a>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- end .navigation__items_child -->
+                                                    </div>
+                                                    <!-- end .navigation_items-_wrapper-->
+                                                </li>
+                                                <li class="navigation__item navigation__item_category"><a href=""
+                                                                                                          class="navigation__link">Макияж</a>
+                                                    <!-- .navigation__items-wrapper-->
+                                                    <div class="navigation__items-wrapper">
+                                                        <!-- .navigation__items_child -->
+                                                        <ul class="navigation__items navigation__items_child">
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Лицо</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Макияж</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Лицо</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Макияж</a></li>
+                                                        </ul>
+
+                                                        <!-- end .navigation__items_child -->
+                                                    </div>
+                                                    <!-- end .navigation_items-_wrapper-->
+                                                </li>
+                                                <li class="navigation__item navigation__item_category"><a href=""
+                                                                                                          class="navigation__link">Волосы</a>
+                                                    <!-- .navigation__items-wrapper-->
+                                                    <div class="navigation__items-wrapper">
+                                                        <!-- .navigation__items_child -->
+                                                        <ul class="navigation__items navigation__items_child">
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Лицо</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Макияж</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Волосы</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Омоложение</a></li>
+                                                            <li class="navigation__item navigation__item_category-item"><a
+                                                                    href="" class="navigation__link">Аксессуары</a>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- end .navigation__items_child -->
+                                                    </div>
+                                                    <!-- end .navigation_items-_wrapper-->
+                                                </li>
+                                            </ul>
+                                            <!-- end .navigation__items_child -->
+                                            .
+                                            <!-- .product-item -->
+                                            <div class="product-item">
+                                                <a href="#" class="product-item__wrapper">
+                                                    <div class="product-item__image"><img src="images/hit-slider/item.png"
+                                                                                          alt=""></div>
+                                                    <div class="product-item__info">
+                                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <!-- end .product-item -->
+
+                                        </div>
+                                        <!-- end .navigation_items-_wrapper-->
+                                    </li>
                                     <li class="navigation__item"><a href="" class="navigation__link">Макияж</a></li>
                                     <li class="navigation__item"><a href="" class="navigation__link">Волосы</a></li>
                                     <li class="navigation__item"><a href="" class="navigation__link">Омоложение</a></li>
                                     <li class="navigation__item"><a href="" class="navigation__link">Аксессуары</a>
-
                                     </li>
                                 </ul>
                                 <!-- end .navigation__items_child -->
                             </div>
-                            <!-- end .navigation__wrapper-->
+                            <!-- end .navigation_items-_wrapper-->
                         </li>
                         <!-- end .navigation__item -->
-                        <li class="navigation__item"><a href="" class="navigation__link">Макияж</a></li>
-                        <li class="navigation__item"><a href="" class="navigation__link">Волосы</a></li>
-                        <li class="navigation__item"><a href="" class="navigation__link">Омоложение</a></li>
-                        <li class="navigation__item"><a href="" class="navigation__link">Аксессуары</a></li>
+                        <li class="navigation__item navigation__item_has-children"><a href=""
+                                                                                      class="navigation__link">Макияж</a></li>
+                        <li class="navigation__item navigation__item_has-children"><a href=""
+                                                                                      class="navigation__link">Волосы</a></li>
+                        <li class="navigation__item navigation__item_has-children"><a href="" class="navigation__link">Омоложение</a>
+                        </li>
+                        <li class="navigation__item navigation__item_has-children"><a href="" class="navigation__link">Аксессуары</a>
+                        </li>
                     </ul>
                     <!-- end .navigation__items -->
                 </div>
                 <!-- end .navigation__wrapper-->
             </nav>
             <!-- end .navigation (sidebar)-->
+
 
             <!-- .form -->
             <div class="form form_sidebar">
@@ -274,8 +367,7 @@
                         <label for="email" class="form__label">Email</label>
                         <input type="email" class="form__input" id="email" placeholder="vicpetrova@mail.ru">
                         <div class="button-wrapper ">
-                            <input class='button button_color_red button_width_full' type="button"
-                                   value="Подписаться">
+                            <a class='button button_color_red button_width_full'>Подписаться</a>
                         </div>
                     </form>
                     <!-- end .form__item -->
@@ -341,7 +433,7 @@
                                         губернии успели уже привыкнуть к ее посещениям.
                                     </p>
                                     <div class="button-wrapper button-wrapper_align_left">
-                                        <a class="button button_stroke" href="#">Подробнее</a>
+                                        <a class="button button_color_white" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +460,7 @@
                                         губернии успели уже привыкнуть к ее посещениям.
                                     </p>
                                     <div class="button-wrapper button-wrapper_align_left">
-                                        <a class="button button_stroke" href="#">Подробнее</a>
+                                        <a class="button button_color_white" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +491,7 @@
                                         губернии успели уже привыкнуть к ее посещениям.
                                     </p>
                                     <div class="button-wrapper button-wrapper_align_left">
-                                        <a class="button button_stroke" href="#">Подробнее</a>
+                                        <a class="button button_color_white" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -426,7 +518,7 @@
                                         губернии успели уже привыкнуть к ее посещениям.
                                     </p>
                                     <div class="button-wrapper button-wrapper_align_left">
-                                        <a class="button button_stroke" href="#">Подробнее</a>
+                                        <a class="button button_color_white" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -447,20 +539,245 @@
                         Хиты продаж
                     </h2>
                 </header>
+
+                <div class="hit__slider">
                 <!-- Slider main container -->
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                        <span class="product-item__hot-value">-20%</span>
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item.png" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                        <span class="product-item__price product-item__price_old">3 500 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__image"><img src="images/hit-slider/item2.jpg" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">КРЕМ ДЛЯ ГЛАЗ «EYE CONTOUR», 30МЛ</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                        <span class="product-item__hot-value">new</span>
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item4.jpg" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                        <span class="product-item__hot-value">-20%</span>
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item.png" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                        <span class="product-item__price product-item__price_old">3 500 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                        <span class="product-item__hot-value">-20%</span>
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item.png" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                        <span class="product-item__price product-item__price_old">3 500 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item3.jpg" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">Cosmo-Age</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                        <span class="product-item__hot-value">-20%</span>
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item.png" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                        <span class="product-item__price product-item__price_old">3 500 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- .product-item -->
+                            <div class="product-item">
+                                <a href="#" class="product-item__wrapper">
+                                    <div class="product-item__hot-wrapper">
+                                        <span class="product-item__hot-value">-20%</span>
+                                    </div>
+                                    <div class="product-item__image"><img src="images/hit-slider/item.png" alt=""></div>
+                                    <div class="product-item__info">
+                                        <div class="product-item__name">CYTOLIFE HYALURONIC ACID HA 1,2%</div>
+                                        <span class="product-item__price product-item__price_new ">3 199 руб</span>
+                                        <span class="product-item__price product-item__price_old">3 500 руб</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end .product-item -->
+                        </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 </div>
             </section>
             <!-- end .hit -->
+
+            <!-- .feedback-section -->
+            <section class="content-section content-section_last feedback-section">
+                <header class="title-section">
+                    <h2 class="title-section__item">
+                        Отзывы
+                    </h2>
+                </header>
+                <!-- .grid -->
+                <div class="grid grid_item-justify_space-between">
+                    <!-- .grid__item -->
+                    <div class="grid__item">
+
+                        <!-- .feedback -->
+                        <div class="feedback">
+                            <header class="feedback__header">
+                                <!-- .profile -->
+                                <div class="profile">
+                                    <div class="profile__wrapper">
+                                        <span class="profile__avatar"><img src="images/avatar.png" alt=""></span>
+                                        <span class="profile__name">Виктория</span>
+                                        <span class="profile__location">Ростов-на-Дону</span>
+                                    </div>
+                                </div>
+                                <!-- end .profile -->
+
+                                <div class="feedback__description">
+                                    <p>
+                                        Он вспомнил теперь, как в Кузминском на него нашло искушение и он стал жалеть и
+                                        дом, и лес, и хозяйство,
+                                        и землю, и спросил себя теперь: жалеет ли он?
+                                    </p>
+                                </div>
+                            </header>
+                        </div>
+                        <!-- end .feedback -->
+                    </div>
+                    <!-- end .grid__item -->
+                    <!-- .grid__item -->
+                    <div class="grid__item">
+
+                        <!-- .feedback -->
+                        <div class="feedback">
+                            <header class="feedback__header">
+                                <!-- .profile -->
+                                <div class="profile">
+                                    <div class="profile__wrapper">
+                                        <span class="profile__avatar"><img src="images/avatar3.jpg" alt=""></span>
+                                        <span class="profile__name">Семен</span>
+                                        <span class="profile__location">Ростов-на-Дону</span>
+                                    </div>
+                                </div>
+                                <!-- end .profile -->
+
+                                <div class="feedback__description">
+                                    <p>
+                                        Господский дом стоял на юру, открытый всем ветрам; возвышенность, на которой он
+                                        стоял, была покрыта дерном. Две-три клумбы с акацией, пять-шесть жиденьких
+                                        берез, деревянная беседка и пруд довершали эту картину.</p>
+                                </div>
+                            </header>
+                        </div>
+                        <!-- end .feedback -->
+                    </div>
+                    <!-- end .grid__item -->
+                    <!-- .grid__item -->
+                    <div class="grid__item">
+                        <!-- .feedback -->
+                        <div class="feedback">
+                            <header class="feedback__header">
+                                <!-- .profile -->
+                                <div class="profile">
+                                    <div class="profile__wrapper">
+                                        <span class="profile__avatar"><img src="images/avatar2.png" alt=""></span>
+                                        <span class="profile__name">Алексей</span>
+                                        <span class="profile__location">Ростов-на-Дону</span>
+                                    </div>
+                                </div>
+                                <!-- end .profile -->
+
+                                <div class="feedback__description">
+                                    <p>
+                                        Все эти замечания пришли мне на ум, может быть, только потому, что я знал
+                                        некоторые подробности его жизни, и, может быть, на другого вид его произвел бы
+                                        совершенно различное впечатление.
+                                    </p>
+                                </div>
+                            </header>
+                        </div>
+                        <!-- end .feedback -->
+                    </div>
+                    <!-- end .grid__item -->
+                </div>
+                <!-- .grid -->
+            </section>
+            <!-- end .feedback-section -->
 
             <!-- end .page-body__content -->
         </div>
@@ -658,6 +975,16 @@
         spaceBetween: 0,
         paginationClickable: true,
         pagination: '.hero-slider .swiper-pagination'
+    });
+
+    var hitSwiper = new Swiper('.hit .swiper-container', {
+        slidesPerView: 5,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        paginationClickable: true,
+        nextButton: '.hit .swiper-button-next',
+        prevButton: '.hit .swiper-button-prev'
+
     });
 </script>
 </body>
